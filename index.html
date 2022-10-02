@@ -49,8 +49,14 @@ ul li a::before
   content: attr(data-text);
   position: absolute;
   color: #fff;
-  width:30%;
+  width:0;
   overflom: hidden;
+  transition:1s;
+  border-right: 8px solid;
+}
+ul li a:hover::before
+{
+  width: 100%;
 }
 
       </style>
