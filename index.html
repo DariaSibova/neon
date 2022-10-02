@@ -51,7 +51,6 @@ ul li a::before
 {
   content: attr(data-text);
   position: absolute;
-  color: var(--clr);
   width:0;
   overflom: hidden;
   transition:1s;
@@ -60,27 +59,33 @@ ul li a::before
 ul li a:hover::before
 {
   width: 100%;
+  color: var(--clr);
   -webkit-text-stroke: 1px var(--clr);
 
 }
+ul li a:hover::before {
+  width: 100%;
+  filter: drop-shadow(0 0 25px var(--clr));
+}
+
 
       </style>
   </head>
   <body>
     <ul>
-      <li style="--clr:#00adel">
+      <li style="--clr:skyblue">
         <a href="#" data-text="&nbsp;Home">&nbsp;Home</a>
       </li>
-      <li>
+      <li style="--clr:pink">
         <a href="#" data-text="&nbsp;About">&nbsp;About</a>
       </li>
-      <li>
+      <li style="--clr:#DFFF00">
         <a href="#" data-text="&nbsp;Services">&nbsp;Services</a>
       </li>
-      <li>
+      <li style="--clr:#DE3163">
         <a href="#" data-text="&nbsp;Team">&nbsp;Team</a>
       </li>
-      <li>
+      <li style="--clr:#A04000">
         <a href="#" data-text="&nbsp;Contact">&nbsp;Contact</a>
       </li>
 
