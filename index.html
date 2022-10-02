@@ -5,7 +5,9 @@
     <title>Css Menu Neon </title>
     <link rel="stylesheet" href="style.css">
     <style>
-      import url('https://fonts.googleapis.com/css2?family=POppins:wght@700&display=swap');
+            import url('https://fonts.googleapis.com/css2?family=POppins:wght@700&display=swap');
+
+
 *
 {
   margin: 0;
@@ -48,16 +50,16 @@ ul li a::before
 {
   content: attr(data-text);
   position: absolute;
-  color: #fff;
+  color: var(--clr);
   width:0;
   overflom: hidden;
   transition:1s;
-  border-right: 8px solid #fff;
+  border-right: 8px solid var(--clr);
 }
 ul li a:hover::before
 {
   width: 100%;
-  -webkit-text-stroke: 1px #fff;
+  -webkit-text-stroke: 1px var(--clr);
 
 }
 
@@ -65,7 +67,7 @@ ul li a:hover::before
   </head>
   <body>
     <ul>
-      <li>
+      <li style="--clr:#00adel">
         <a href="#" data-text="&nbsp;Home">&nbsp;Home</a>
       </li>
       <li>

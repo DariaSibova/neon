@@ -41,11 +41,11 @@ ul li a::before
 {
   content: attr(data-text);
   position: absolute;
-  color: #fff;
+  color: var(--clr);
   width: 0;
   overflow: hidden;
   transition: 1s;
-  border-right: 8px solid #fff;
+  border-right: 8px solid var(--clr);
 }
 ul li a:hover::before
 {
